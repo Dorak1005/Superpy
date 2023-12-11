@@ -1,0 +1,4 @@
+buy_id;buy_date;buy_name;buy_amount;buy_price;expire_date
+1;01.12.2023;Apple;20;1.50;31.12.2023
+2;24.11.2023;Bananas;15;1.99;15.12.2023
+3;28.11.2023;Carrots;25;1.25;10.12.2023
