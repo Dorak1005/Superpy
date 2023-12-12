@@ -1,0 +1,94 @@
+# SuperPy User Guide
+
+## Overview
+
+SuperPy is a command-line inventory management system designed for a supermarket chain. It allows users to keep track of products, purchases, sales, and generate various reports. This guide provides instructions on how to use SuperPy effectively.
+
+## Table of Contents
+
+1. [Getting Started](#getting-started)
+2. [Commands](#commands)
+   - [Initializing Date](#initializing-date)
+   - [Advancing Time](#advancing-time)
+   - [Recording a Purchase](#recording-a-purchase)
+   - [Recording a Sale](#recording-a-sale)
+   - [Generating Reports](#generating-reports)
+   - [Importing CSV Files](#importing-csv-files)
+
+
+## Getting Started
+
+To get started with SuperPy, follow these steps:
+
+1. Download the SuperPy script (`superpy.py`) and the `helpers.py` module.
+2. Make sure you have Python installed on your system.
+3. Open a terminal or command prompt.
+4. Navigate to the directory containing `superpy.py` and `helpers.py`.
+5. Run the command `python superpy.py --init-date` to initialize the date.
+
+
+## Commands
+
+### Initializing Date
+
+Use the following command to initialize the date:
+
+```bash
+$ python superpy.py --init-date
+
+This command sets the initial date to "20-11-2023".
+
+
+Advancing Time
+To advance the date by a specified number of days, use the following command:
+
+$ python superpy.py --advance-time <days>
+
+Replace <days> with the number of days to advance.
+
+
+
+Recording a Purchase
+Record a product purchase with the following command:
+
+$ python superpy.py buy --product-name <name> --buy-price <price> --expiration-date <expiry-date>
+
+Replace <name> with the product name, <price> with the purchase price, and <expiry-date> with the expiration date.
+
+
+
+Recording a Sale
+Record a product sale with the following command:
+
+$ python superpy.py sell --product-name <name> --sell-price <price>
+
+Replace <name> with the product name and <price> with the selling price.
+
+
+
+Generating Reports
+Generate inventory, revenue, or profit reports with the following command:
+
+$ python superpy.py report <report-type> --now/--yesterday/--date <date>
+
+Replace <report-type> with "inventory", "revenue", or "profit". Use --now for the current date, --yesterday for the previous date, or --date <date> to specify a date.
+
+
+
+Importing CSV Files
+Import CSV files with the following command:
+
+Replace <report-type> with "inventory", "revenue", or "profit". Use --now for the current date, --yesterday for the previous date, or --date <date> to specify a date.
+
+
+
+Importing CSV Files
+Import CSV files with the following command:
+
+$ python superpy.py --import <bought-csv-path> <sell-csv-path>
+
+Replace <bought-csv-path> and <sell-csv-path> with the paths to the respective CSV files.
+
+
+
+Enjoy using SuperPy for efficient inventory management!
